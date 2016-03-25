@@ -1,0 +1,377 @@
+<html lang="zh" style="" class=" js canvas rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients cssreflections csstransforms csstransforms3d csstransitions video svg" slick-uniqueid="1">
+<head>
+	<meta charset="utf-8">
+	<meta name="referrer" content="always">
+	<title>惊喜为你</title>
+	<!-- <meta http-equiv="mobile-agent" content="format=html5;url=http://huaban.com/"> -->
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="explore.css">
+	<link rel="stylesheet" href="new_index.css">
+
+<style type="text/css">
+#text {
+	margin-top: 29px;
+	text-align: center;
+	color: #222222;
+	font-size: 19px;
+	line-height: 39px;
+}
+.c_blank {
+	height: 500px;
+}
+
+.c_214, .c_214 p{
+	color: red;
+	font-size: 29px;
+	margin-top: 129px;
+	height: 600px;
+	margin-right: 19px;
+	text-align: center;
+}
+
+.r_t {
+	width: 90%;
+	position: absolute;
+	font-size: 24px;
+	color: #777777;
+	line-height: 24px;
+	margin-top: 6px;
+	height: 40px;
+}
+
+</style>
+	
+</head>
+<script src="jquery.js"></script>
+<script src="snowfall.jquery.min.js"></script>
+<script src="typed.js"></script>
+<script language="JavaScript">
+	$(function(){
+      $("#text").typed({
+        strings: ["你说你想要礼物，我想尽办法想给你最好最珍贵的东西；你说你想要惊喜，我不惜一切努力为你创造一个新奇。<br>只因为我爱你^1000", 
+        			"我想让你和我在一起能真的幸福，我还想让你生活的每一天都开心，我甚至还希望这辈子一刻都不离开你。<br>我真的爱你好深^1000",
+        			"我丢掉全世界也放心不下你，这999个日日夜夜已经让你成为我生命中最美的风景和最珍贵的礼物，我要继续无数个日日夜夜的<br>守护你，疼爱你，保护你^1000",
+        			"我想用我的真诚和心意去打动你，我相信终有一天，我会实现我心中的梦想，到那一天，你一定会愿意嫁给我！<br>因为那时你会相信，我会给你幸福。^1000",
+        			"我努力并等待着那一天!"],
+        typeSpeed: 99,
+        showCursor: false,
+      });
+  });
+function autoResizepic(Imgc)  
+{  
+    //Imgc是包含图片DIV的ID  
+    var picTarget=document.getElementById(Imgc).getElementsByTagName('img');      
+    //alert(picTarget.length);  
+    var rule_w=635;//最宽图片宽度  
+    if(picTarget.length>0)  
+    {  
+        //alert(picTarget.length);  
+        for(var i =0;i<picTarget.length;i++)  
+        {   
+                  
+                if(picTarget[i].width>rule_w)  
+                    {picTarget[i].height=picTarget[i].height*rule_w/picTarget[i].width;picTarget[i].width=rule_w;}  
+                if(parseInt(picTarget[i].style.width)>rule_w)  
+                    {picTarget[i].style.height=parseInt(picTarget[i].style.height)*rule_w/parseInt(picTarget[i].style.width);picTarget[i].style.width=rule_w+"px";}   
+        }  
+    }  
+}  
+</script>
+
+<body>
+	<div id="page" class="page-min-width" style="display: block;">
+		<div class="head-box">
+			<div class="banner-background" style="opacity: 1; background-color: #FFF0F5; background-position: 50% 0px;">
+				<div class="c_blank">
+					
+				</div>
+				<div class="c_214">
+					<p>东东 & 甜甜 | 999 & 214</p>
+				</div>
+			</div>
+
+			<div class="new-banner" style="text-align: center;">
+				<canvas id="c" height="599" width="100%"></canvas>
+					<script>
+					    var b = document.body;
+					    var c = document.getElementsByTagName('canvas')[0];
+					    var a = c.getContext('2d');
+					    document.body.clientWidth;
+					</script>
+					<script>
+					// start of submission //
+					with(m=Math)C=cos,S=sin,P=pow,R=random;c.width=c.height=f=599;h=-269;function p(a,b,c){if(c>60)return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*400,a*1-b/2,a];A=a*2-1;B=b*2-1;if(A*A+B*B<1){if(c>37){n=(j=c&1)?6:4;o=.5/(a+.01)+C(b*125)*3-a*300;w=b*h;return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}if(c>32){c=c*1.16-.15;o=a*45-20;w=b*b*h;z=o*S(c)+w*C(c)+620;return[o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]}o=A*(2-b)*(80-c*2);w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]}}setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',0)
+					// end of submission //
+					</script>
+
+				<div class="author">
+					<div class="wrapper wrapper-996" >
+						<span style="color:#777777">赠：</span>
+						<a href="https://github.com/tiantianseu/" style="color:#777777" rel="nofollow">甜宝宝</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="wrapper-996 wrapper">
+		<div id="text"></div>
+		<div style="height: 29px;"></div>
+			<div class="recommend-line">
+				<a>第一波爱情见证</a>
+			</div>
+			<div style="height: 19px;"></div>
+			<div id="recommend_container" class="recommend-container">
+				<div class="recommend-container-row clearfix">
+					<div class="recommend-imgbox recommend-box">
+						<a href="">
+							<img src="img/1.jpeg"></a>
+					</div>
+					<div class="recommend-box">
+						<div class="recommend-infobox board small">
+							<div class="r_t">
+								聊天
+							</div>
+							<h2>
+								<a href="">2016第一次视频通话</a>
+							</h2>
+							<p>
+								<span>2016 年</span>
+								<span>1月 25日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">手机截屏</a>
+							</span>
+						</div>
+						<div class="info-tra-left"></div>
+						<div class="recommend-infobox board small pl-right">
+							<div class="r_t" style="text-align:right;">
+								娱乐
+							</div>
+							<h2>
+								<a href="">2015-2016跨年演唱会彩排</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>12月 29日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">自拍</a>
+							</span>
+						</div>
+						<div class="info-tra-right"></div>
+					</div>
+					<div class="recommend-imgbox recommend-box">
+						<a href="">
+							<img src="img/2.jpeg"></a>
+					</div>
+					<div class="recommend-hidebox pl-right">
+						<div class="recommend-imgbox recommend-box">
+							<a href="">
+								<img src="img/3.jpeg"></a>
+						</div>
+						<div class="recommend-infobox board recommend-box big">
+							<h2>
+								<a href="">南京圣诞村</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>12月 19日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">游玩</a>
+							</span>
+							<div class="info-tra-left big"></div>
+						</div>
+					</div>
+				</div>
+				<div style="height: 19px;"></div>
+				<div class="recommend-container-row clearfix">
+					<div class="recommend-hidebox pl-right">
+						<div class="recommend-infobox user recommend-box pl-right big">
+							<div class="r_t">
+								游玩
+							</div>
+							<h2 class="user">
+								<a href="">圣诞村</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>12月 19日</span>
+							</p>
+							<div class="info-tra-right big"></div>
+						</div>
+						<div class="recommend-userbox recommend-box">
+							<a href="" class="avt">
+								<img src="img/4.jpeg"></a>
+							<a style="background:url(http://img.hb.aicdn.com/03b6d61f687e4f0e466101a80a8637c37c9bd712412e-YfNdOX_sq308bl20) no-repeat" class="avt-bg"></a>
+						</div>
+					</div>
+					<div class="recommend-imgbox recommend-box">
+						<a href="">
+							<img src="img/5.jpeg"></a>
+					</div>
+					<div class="recommend-box">
+						<div class="recommend-infobox board small">
+							<div class="r_t">
+								游玩
+							</div>
+							<h2>
+								<a href="">石家庄世纪公园</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>10月 07日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">旅行</a>
+							</span>
+						</div>
+						<div class="info-tra-left"></div>
+						<div class="recommend-infobox user small pl-right">
+							<div class="r_t" style="text-align:right;">
+								娱乐
+							</div>
+							<h2 class="user">
+								<a href="">石家庄电视塔</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>10月 07日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">旅行</a>
+							</span>
+						</div>
+						<div class="info-tra-right"></div>
+					</div>
+					<div class="recommend-userbox recommend-box">
+						<a href="" class="avt">
+							<img src="img/6.jpeg"></a>
+						<a style="background:url(http://img.hb.aicdn.com/be5f5b8debce5c990a77bfbf6c08b229b7ef1ea81436-RdfKIb_sq308bl20) no-repeat" class="avt-bg"></a>
+					</div>
+				</div>
+				<div style="height: 19px;"></div>
+				<div class="recommend-container-row clearfix">
+					<div class="recommend-imgbox recommend-box">
+						<a href="">
+							<img src="img/7.jpeg"></a>
+					</div>
+					<div class="recommend-box">
+						<div class="recommend-infobox board small">
+							<div class="r_t">
+								游玩
+							</div>
+							<h2>
+								<a href="">从河北回南京的火车上</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>10月 07日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">旅行</a>
+							</span>
+						</div>
+						<div class="info-tra-left"></div>
+						<div class="recommend-infobox user small pl-right">
+							<div class="r_t" style="text-align:right;">
+								自嗨
+							</div>
+							<h2 class="user">
+								<a href="">夕阳下的捏太阳</a>
+							</h2>
+							<p>
+								<span>2015 年</span>
+								<span>09月 27日</span>
+							</p>
+							<span>
+								来自
+								<a href="" rel="nofollow">学校</a>
+							</span>
+						</div>
+						<div class="info-tra-right"></div>
+					</div>
+					<div class="recommend-userbox recommend-box">
+						<a href="" class="avt">
+							<img src="img/8.jpeg"></a>
+						<a style="background:url(http://img.hb.aicdn.com/32a9d0911aaffed46441a9cf7195842df0b75ab22e424-B3HAzX_sq308bl20) no-repeat" class="avt-bg"></a>
+					</div>
+					<div class="recommend-hidebox pl-right">
+						<div class="recommend-imgbox recommend-box">
+							<a href="">
+								<img src="img/9.jpeg"></a>
+						</div>
+						<div class="recommend-infobox board recommend-box big">
+							
+							<h2>
+								<a href="">第一次一同去图书馆学习</a>
+							</h2>
+							<p>
+								<span>2013 年</span>
+								<span>05月 27日</span>
+							</p>
+							<span>
+								来自
+								<a href="/viss/" rel="nofollow">红染</a>
+							</span>
+							<div class="info-tra-left big"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div style="height: 29px;"></div>
+			<div class="recommend-line">
+				<a>爱情见证继续中...</a>
+			</div>
+		</div>
+		<div style="height: 29px;"></div>
+		<div id="index_footer">
+			<div class="wrapper wrapper-996">
+				<div class="column">
+					<a class="title">说明</a>
+					<a href="" rel="nofollow">著作说明</a>
+					<a href="" rel="nofollow">版权说明</a>
+					<a href="" rel="nofollow">所有权说明</a>
+					<a href="" rel="nofollow">当前版本说明</a>
+				</div>
+				<div class="column">
+					<a class="title">爱情备注</a>
+					<a href="" rel="nofollow">时间：2016年2月14日</a>
+					<a href="" rel="nofollow">for：代甜甜</a>
+					<a href="" rel="nofollow">by:  罗东</a>
+				</div>
+				<div class="column">
+ 					<a class="title">掉落999支玫瑰花</a>
+					<a href="" id="check_rose">选择打开&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c_r" value=""></a>
+					
+				</div>
+				<div class="column follow-us">
+					<a class="title">关注我们</a>
+					<a href="http://weibo.com/luodongsue" target="_blank" rel="nofollow">新浪微博：@东东东东东罗</a>
+					<a href="http://weibo.com/tiantianseu" target="_blank" rel="nofollow">新浪微博：@甜甜甜甜甜代</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0"></body>
+
+	 <script type="text/javascript">     
+        $(document).ready(function(){
+        	$("#c_r").click(function(){ 
+        		$('html').snowfall('clear');
+		        if($("#c_r").is(':checked')){  
+		        	//alert("checked");
+               		$('html').snowfall({flakeCount : 999, image :"rose.png", minSize: 19, maxSize:39, minSpeed: 2, maxSpeed:16 });
+		        } 
+		    }) 
+               //$('html').snowfall({flakeCount : 999, image :"rose.png", minSize: 19, maxSize:39, minSpeed: 2, maxSpeed:16 });
+        });
+    </script>
+</html>

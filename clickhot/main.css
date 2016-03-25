@@ -1,0 +1,154 @@
+body
+{
+	margin:0;
+    padding:0;
+    background:url("bg.jpg");
+    
+}
+
+html, body 
+{
+    height: 100%;
+}
+
+ul,li
+{
+	margin:0;
+    padding:0;
+}
+
+.header
+{
+    position:fixed;
+    width:100%;
+	height:50px;
+    background:rgba(0,0,0,0.2);
+    margin-bottom:-50px;
+    top:0;
+}
+
+.content
+{   
+    display:block;
+    min-height: 100%;
+}
+
+
+.footer
+{
+    width:100%;  
+    background:rgba(0,0,0,0.2);
+    height: 100px; 
+    clear:both; 
+    margin-top:-100px;
+}
+
+nav span
+{
+    display:inline-block;
+	height:50px;
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    margin-left:20px;
+    font-size:20px;
+}
+
+nav ul
+{
+    margin:0;
+	float:right;
+    padding-right:20px;
+}
+
+nav ul li
+{
+    margin:auto 3px;
+	float:left;
+    list-style-type:none;
+}
+
+nav ul li a
+{
+  	width:40px;
+	display:inline-block;
+    line-height:50px;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    text-shadow:-1px 8px 9px #000000;
+    
+}
+
+.guest
+{
+    width:60%;
+    float:left;
+	color:red;
+    text-align:center;
+    display:inline-block;
+     margin-top:200px;
+    font-size:22px;
+}
+
+.guest span
+{
+	
+    width:200px;
+    text-align:center;
+   
+}
+
+.allg
+{
+	float:right;
+    width:40%;
+    margin-top:80px;
+}
+
+.allg table thead
+{
+	background:#666666;
+}
+
+.allg table tr td
+{
+	border:1px dashed #555;
+    margin:0;
+    padding:0;
+    color:#aaa;
+}
+
+.share
+{
+	text-align:center;
+    line-height:60px;
+    
+}
+
+.share ul li a
+{
+    display:block;
+	color:#fcfcfc;
+    line-height:20px;
+    width:20px;
+    
+}
+.share ul li span
+{
+	color:#fcfcfc;
+    font-size:12px;
+}
+
+.copy
+{
+	text-align:center;
+    color:#aaa;
+    font-size:10px;
+}
+
+.share ul li
+{
+	display:inline-block;
+    padding:0 20px;
+}
